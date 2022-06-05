@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gpsdraftdemo
+spec:
+  type: LoadBalancer
+  selector:
+    app: gpsdraftdemo
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000

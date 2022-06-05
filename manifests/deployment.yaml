@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: gpsdraftdemo
+  name: gpsdraftdemo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gpsdraftdemo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: gpsdraftdemo
+    spec:
+      containers:
+      - image: gpsdraftdemo.azurecr.io/gpsdraftdemo
+        name: gpsdraftdemo
+        ports:
+        - containerPort: 5000
+        resources: {}
+status: {}
