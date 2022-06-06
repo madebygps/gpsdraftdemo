@@ -21,6 +21,6 @@ spec:
       - image: gpsdraftdemo.azurecr.io/gpsdraftdemo
         name: gpsdraftdemo
         ports:
-        - containerPort: 5000
+        - containerPort: 80
         resources: {}
 status: {}
